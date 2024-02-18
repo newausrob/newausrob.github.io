@@ -1,0 +1,116 @@
+body{
+    font-family: 'VT323', monospace;
+}
+
+#imgmario {
+    position: absolute;
+    bottom: 10%;
+
+    animation: myMarioSlide;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes myMarioSlide{
+    from{bottom: 10%;}
+    to{bottom: 90%;}
+} 
+
+#wave{
+    position: absolute;
+    left: 6.5%;
+    bottom: 85%;
+    font-size: 20px;
+    text-decoration: underline;
+
+    animation: sciTextwave;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#speed{
+    position: absolute;
+    left: 6.5%;
+    bottom: 79%;
+    font-size: 20px;
+
+    animation: speed;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sciTextwave {
+    100%{ opacity: 1;}
+    0%{ opacity: 0;}
+}
+
+#notessci{
+    position: absolute;
+    left: 3.5%;
+    font-size: 30px;
+
+    animation: sciNotesSlide;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sciNotesSlide {
+    from{bottom: 10%;}
+    to{bottom: 90%;}
+}
+
+@keyframes sciTextwave {
+    100%{ opacity: 1;}
+    0%{ opacity: 0;}
+}
+
+@keyframes speed {
+    100%{ opacity: 1;}
+    0%{ opacity: 0;}
+}
+
+#wavetext{
+    position: absolute;
+    text-align: center;
+    width: 600px;
+    right: 0%;
+    bottom: 80%;
+    font-size: 20px;
+
+    animation: waveSlide;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes waveSlide {
+    from{margin-right: -50%}
+    to{margin-right: 30%;}
+}
+
+#answersheet{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+
+#soundtrack{
+    position: absolute;
+    top: 1%;
+    right: 0%;
+    opacity: 50%;
+
+    animation: soundSlide;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes soundSlide {
+    from{margin-right: -50%;}
+    to{margin-right: 0%;}
+}

@@ -1,0 +1,80 @@
+#box1{
+    width: 500px;
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    top: 1%;
+
+    animation: mySlide;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#imgmario {
+    position: absolute;
+    bottom: 10%;
+
+    animation: myMarioSlide;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#menutext{
+    position: absolute;
+    left: 3.5%;
+    font-size: 30px;
+    color: red;
+
+    animation: mainmenuSlide;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+a:link {
+    color: red;
+  }
+
+@keyframes mainmenuSlide {
+    from{bottom: 8%;}
+    to{bottom: 92%;}
+}
+
+.vt323-regular {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+body{
+    font-family: 'VT323', monospace;
+}
+
+ @keyframes myMarioSlide{
+    from{bottom: 10%;}
+    to{bottom: 90%;}
+} 
+
+@keyframes mySlide{
+    from{margin-left: 100%;}
+    to{margin-left: 32%;}
+}
+
+#soundtrack{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    opacity: 50%;
+
+    animation: soundSlide;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes soundSlide {
+    from{margin-right: -50%;}
+    to{margin-right: 0%;}
+}
